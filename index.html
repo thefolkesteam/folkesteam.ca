@@ -20,10 +20,10 @@
         }
 
         header {
-            min-height: 90vh;
+            min-height: 95vh; /* Slightly increased to fit the longer text beautifully */
             background: linear-gradient(
-                rgba(0,0,0,0.55),
-                rgba(0,0,0,0.55)
+                rgba(0,0,0,0.60), /* Darkened slightly for improved readability */
+                rgba(0,0,0,0.60)
             ),
             url("Tre_V1.png")
             center/cover;
@@ -33,19 +33,23 @@
             justify-content:center;
             text-align:center;
             color:white;
-            padding:40px;
+            padding:60px 40px;
         }
 
         .hero h1 {
             font-size:55px;
-            margin-bottom:20px;
+            margin-bottom:25px;
         }
 
         .hero p {
-            font-size:22px;
-            max-width:700px;
+            font-size:18px; /* Adjusted down from 22px so the long paragraph blocks are easy to read */
+            max-width:750px;
             margin:auto;
-            margin-bottom:35px;
+            margin-bottom:20px; /* Space between paragraphs */
+        }
+
+        .hero p:last-of-type {
+            margin-bottom:40px; /* Generous space right before the buttons */
         }
 
         .button {
@@ -57,6 +61,11 @@
             color:#111;
             text-decoration:none;
             font-weight:bold;
+            transition: opacity 0.2s ease;
+        }
+        
+        .button:hover {
+            opacity: 0.9;
         }
 
         section {
@@ -94,6 +103,9 @@
             .hero h1 {
                 font-size:38px;
             }
+            .hero p {
+                font-size:16px;
+            }
         }
 
     </style>
@@ -104,10 +116,18 @@
 
 <header>
     <div class="hero">
-        <h1>The Folkes Team</h1>
+        <h1>Tré Folkes Real Estate</h1>
+        
         <p>
-            Helping buyers, sellers, and investors make confident
-            real estate decisions across Toronto and the GTA.
+            At The Folkes Team, we understand that buying or selling a property is more than just a transaction — it’s a significant life journey. As a full-service real estate team, we provide our clients with expert guidance in leasing, buying, selling, property building, and overall home care.
+        </p>
+        
+        <p>
+            Our commitment is to educate and empower our clients through relevant market insights, personalized strategies, and exceptional service at every step of the process. We strive to create a welcoming and supportive experience where your goals come first, ensuring you feel confident, informed, and cared for from start to finish.
+        </p>
+        
+        <p>
+            At The Folkes Team, we believe relationships are more important than transactions. Our goal is to build lifelong connections with our clients by providing genuine value, trusted advice, and continued support throughout every stage of their real estate journey.
         </p>
 
         <a class="button" href="#contact">Book A Consultation</a>
@@ -180,7 +200,7 @@ Data-driven advice for real estate investors.
 The Folkes Team<br>
 Toronto & GTA Real Estate<br><br>
 
-Email: trefolkes@hotmail.com.com<br>
+Email: trefolkes@hotmail.com<br>
 Phone: 416-625-1695
 </p>
 
